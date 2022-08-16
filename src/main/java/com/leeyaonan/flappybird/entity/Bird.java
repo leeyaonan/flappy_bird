@@ -1,7 +1,22 @@
 package com.leeyaonan.flappybird.entity;
 
 /**
- * 飞翔物：小鸟
+ * 飞行物：小鸟
  */
-public class Bird extends FlyObject {
+public class Bird extends FlyerObject {
+
+    @Override
+    public void flap() {
+
+    }
+
+    @Override
+    public void fall() {
+
+    }
+
+    @Override
+    public void keyReleased() {
+
+    }
 }
