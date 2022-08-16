@@ -1,30 +1,13 @@
 package com.leeyaonan.flappybird.entity;
 
-import javax.swing.*;
+import java.awt.*;
 
 /**
- * 游戏开始界面
+ * 欢迎界面
  */
-public class WelcomeInterface extends JFrame {
+public class WelcomeInterface {
 
-    private static volatile WelcomeInterface INSTANCE;
+    public void draw(Graphics bufG) {
 
-    private WelcomeInterface() {
-
-    }
-
-    /**
-     * 单例模式获取欢迎界面
-     * @return
-     */
-    public static WelcomeInterface getInstance() {
-        if (INSTANCE == null) {
-            synchronized (WelcomeInterface.class) {
-                if (INSTANCE == null) {
-                    INSTANCE = new WelcomeInterface();
-                }
-            }
-        }
-        return INSTANCE;
     }
 }
